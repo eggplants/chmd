@@ -1,8 +1,10 @@
 # `chmd`
 
-- Make CHANGELOG.md from git-log and git-tag
+- Make CHANGELOG.md from git log and tags of repositorywhich origin exists on github.
 
 ## Syntax
+
+- See example: [chmd/CHANGELOG.md](CHANGELOG.md)
 
 ```txt
 # Changelog
@@ -19,34 +21,31 @@
 <blank line>
 ```
 
+## Install
+
+```bash
+gem install chmd
+```
+
 ## Usage
 
-```bash
-$ curl -L https://git.io/JRuUu -o chmd && chmod +x $_
-# inside git repo
-$ ./chmd | less # check output
-$ ./chmd > CHANGELOG.md
-# outside git repo
-$ ./chmd
-Error: outside git repo, or git is not installed.
+- Within git repo:
+
+```txt
+$ chmd
+# Changelog
+
+...(output)...
+
+$ chmd > CHANGELOG.md
 ```
 
-- If you want to globally run this command,
+- Raise an error when executing outside git repo:
 
-```bash
-$ sudo install -m 755 chmd /usr/local/bin/chmd
-$ which chmd
-/usr/local/bin/mkch
+```txt
+$ chmd
+Error: You are outside git repo.
 ```
-
-## Sample
-
-- [face-symmetrizer/CHANGELOG.md](https://github.com/eggplants/face-symmetrizer/blob/master/CHANGELOG.md)
-  - Made by `chmd`
-
-## Requirements
-
-- Ruby
 
 ## License
 
