@@ -1,5 +1,10 @@
 # Changelog
 
+## [v1.2](https://github.com/eggplants/chmd/releases/tag/v1.2) - 2021-08-10 04:03:13 ([compare](https://github.com/eggplants/chmd/compare/origin/main...v1.2))
+
+- [6ab2307d309c9195c0aafc524560a6b7c3910f56](https://github.com/eggplants/chmd/commit/6ab2307d309c9195c0aafc524560a6b7c3910f56)
+  - update: descriptions
+
 ## [v1.1](https://github.com/eggplants/chmd/releases/tag/v1.1) - 2021-08-10 03:07:39 ([compare](https://github.com/eggplants/chmd/compare/v1.0...v1.1))
 
 - [d06d998842e14631a7b8287308013ff23728b47b](https://github.com/eggplants/chmd/commit/d06d998842e14631a7b8287308013ff23728b47b)
