@@ -6,7 +6,7 @@
 ## Usage
 
 ```bash
-$ curl -Lo chmd&&
+$ curl -L https://git.io/JRuUu -o chmd && chmod +x $_
 # inside git repo
 $ ./chmd | less # check output
 $ ./chmd > CHANGELOG.md
