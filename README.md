@@ -2,7 +2,6 @@
 
 - Make CHANGELOG.md from git-log and git-tag
 
-
 ## Usage
 
 ```bash
@@ -18,7 +17,7 @@ Error: outside git repo, or git is not installed.
 - If you want to globally run this command,
 
 ```bash
-$ install -m 755 chmd /usr/local/bin/chmd
+$ sudo install -m 755 chmd /usr/local/bin/chmd
 $ which chmd
 /usr/local/bin/mkch
 ```
