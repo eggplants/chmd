@@ -8,14 +8,22 @@ unless $CHILD_STATUS.success?
   warn 'Error: outside git repo, or git is not installed.'
   exit 1
 end
+remote_urls = `git remote get-url origin`.split("\n").grep(/github\.com/)
+unless remote_urls.size == 1
+  warn 'Error: remote origin is not on github.com.'
+  exit 1
+end
+
+remote_url = remote_urls[0].sub(/.git$/, '')
 ref = nil
 tags = {}
-logs = `git log --pretty=format:"%H	%ad	%s	%D"`.split "\n"
+logs = `git log --pretty=format:"%H	%ad	%s	%D" \
+        --date=format:'%Y-%m-%d %H:%M:%S'`.split "\n"
 logs.map { _1.split "\t" }.each do |c|
   ref = c[-1] unless c[3].nil?
   tags[ref] = tags[ref].nil? ? [c[0, 3]] : tags[ref] + [c[0, 3]]
 end
-puts "# Changelog\n\n"
+puts '# Changelog'
 tags.each do |k, v|
   _, ts, = v[0].map(&:strip)
   next unless k =~ /tag: /
@@ -24,14 +32,15 @@ tags.each do |k, v|
   prev_tag_name = (
        tags.keys[tags.keys.index(k) + 1] ||= tags.values[-1][-1][0]
      ).sub('tag: ', '')
-  puts "## version [#{tag_name}](../../releases/tag/#{tag_name}) " \
-       + "in #{ts} ([compare](../../compare/#{prev_tag_name}...#{tag_name}))"
+  puts "\n## [#{tag_name}](#{remote_url}/releases/tag/#{tag_name}) " \
+       + "- #{ts} ([compare](#{remote_url}/compare/#{prev_tag_name}...#{tag_name}))"
   puts
   v.each do |hash, _, msg|
+    next if msg =~ /changelog/i
+
     puts <<~A
-      - [#{hash}](../../commit/#{hash})
+      - [#{hash}](#{remote_url}/commit/#{hash})
         - #{msg}
     A
   end
-  puts
 end

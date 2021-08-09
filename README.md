@@ -2,6 +2,23 @@
 
 - Make CHANGELOG.md from git-log and git-tag
 
+## Syntax
+
+```txt
+# Changelog
+<blank line>
+## Version [<tagname>](<gh_url>/releases/tag/<tagname>) in <timestamp> ([compare](<gh_url>/compare/<prev_tagname | init_commit_hash>...<tagname>))
+<blank line>
+- [<commit_hash>](<gh_url>/commit/<commit_hash>)
+  - <message>
+- [<commit_hash>](<gh_url>/commit/<commit_hash>)
+  - <message>
+...
+- [<commit_hash>](<gh_url>/commit/<commit_hash>)
+  - <message>
+<blank line>
+```
+
 ## Usage
 
 ```bash
