@@ -1,5 +1,7 @@
 # `chmd`
 
+![Gem](https://img.shields.io/gem/v/chmd)
+
 - Make CHANGELOG.md from git log and tags of repositorywhich origin exists on github.
 
 ## Syntax
