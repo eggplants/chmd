@@ -1,6 +1,6 @@
 # `chmd`
 
-[![Gem](https://img.shields.io/gem/v/chmd?color=%23dc3519)](https://rubygems.org/gems/chmd)
+[![Gem](https://img.shields.io/gem/v/chmd?color=%23dc3519)](https://rubygems.org/gems/chmd) [![Release Gem](https://github.com/eggplants/chmd/actions/workflows/release.yml/badge.svg)](https://github.com/eggplants/chmd/actions/workflows/release.yml)
 
 - CHANGELOG.md generator specializing in github repo
 
