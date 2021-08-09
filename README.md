@@ -1,6 +1,8 @@
-# `chmd`
+# CHANGELOG.md generator: `chmd`
 
-[![Gem](https://img.shields.io/gem/v/chmd?color=%23dc3519)](https://rubygems.org/gems/chmd)
+## TL;DR
+
+[![Gem](https://img.shields.io/gem/v/chmd?color=%23dc3519)](https://rubygems.org/gems/chmd) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/3e754783cb5b4f5789376cdef143d8d8)](https://app.codacy.com/gh/eggplants/chmd?utm_source=github.com&utm_medium=referral&utm_content=eggplants/chmd&utm_campaign=Badge_Grade_Settings) [![Release Gem](https://github.com/eggplants/chmd/actions/workflows/release.yml/badge.svg)](https://github.com/eggplants/chmd/actions/workflows/release.yml)
 
 - CHANGELOG.md generator specializing in github repo
 
@@ -33,23 +35,22 @@ gem install chmd
 
 - Within git repo:
 
-```txt
-$ chmd
+```bash
+chmd
 ```
 
 ![scs01](img/scs01.png)
 
 - And output to CHANGELOG.md
 
-```txt
-$ chmd > CHANGELOG.md
+```bash
+chmd > CHANGELOG.md
 ```
 
 - Raise an error when executing outside git repo:
 
-```txt
-$ chmd
-Error: You are not in a git repo.
+```bash
+chmd # Error: You are not in a git repo.
 ```
 
 ## License
