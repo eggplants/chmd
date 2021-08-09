@@ -18,9 +18,9 @@ end
 puts "# Changelog\n\n"
 tags.each do |k, v|
   _, ts, = v[0].map(&:strip)
-  next unless k =~ /^tag: /
+  next unless k =~ /tag: /
 
-  tag_name = Regexp.last_match.post_match.strip
+  tag_name = Regexp.last_match.post_match.strip.split(',')[0]
   prev_tag_name = (
        tags.keys[tags.keys.index(k) + 1] ||= tags.values[-1][-1][0]
      ).sub('tag: ', '')
