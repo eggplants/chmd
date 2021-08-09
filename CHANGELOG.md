@@ -1,11 +1,19 @@
 # Changelog
 
-## [v1.0](https://github.com/eggplants/chmd/releases/tag/v1.0) - 2021-08-10 02:31:46 ([compare](https://github.com/eggplants/chmd/compare/origin/main...v1.0))
+## [v1.0](https://github.com/eggplants/chmd/releases/tag/v1.0) - 2021-08-10 02:39:47 ([compare](https://github.com/eggplants/chmd/compare/v0.2...v1.0))
 
+- [47908579895ebbed0202f57083de72703ed9b82a](https://github.com/eggplants/chmd/commit/47908579895ebbed0202f57083de72703ed9b82a)
+  - fix: ci syntax
+- [552ec473d2ba8b51d4c284a3b15ede680f05461f](https://github.com/eggplants/chmd/commit/552ec473d2ba8b51d4c284a3b15ede680f05461f)
+  - add: swp to ignore
 - [9b45e5c8285a0e73ad9fc7a70f219f26853895cb](https://github.com/eggplants/chmd/commit/9b45e5c8285a0e73ad9fc7a70f219f26853895cb)
   - fix: version
 - [5784cabe38858a9d71a79849703f4e35264268b2](https://github.com/eggplants/chmd/commit/5784cabe38858a9d71a79849703f4e35264268b2)
   - add: ci
+- [3d2b8c7b4005d8589e6e6060e66afc09d781421e](https://github.com/eggplants/chmd/commit/3d2b8c7b4005d8589e6e6060e66afc09d781421e)
+  - add: gem requirements
+- [88e089e071abe5f62c2b8b43d9002e0f3854556b](https://github.com/eggplants/chmd/commit/88e089e071abe5f62c2b8b43d9002e0f3854556b)
+  - fix: error handler for git command
 
 ## [v0.2](https://github.com/eggplants/chmd/releases/tag/v0.2) - 2021-08-09 20:16:40 ([compare](https://github.com/eggplants/chmd/compare/v0.1...v0.2))
 
