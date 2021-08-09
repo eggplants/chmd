@@ -1,11 +1,17 @@
 #!/usr/bin/env ruby
-# fronze_string_literal: true
+# frozen_string_literal: true
 
 require 'English'
 
-`git rev-parse --show-toplevel >/dev/null 2>/dev/null`
+# Error handlers
+system 'git', %i[out err] => File::NULL
 unless $CHILD_STATUS.success?
-  warn 'Error: outside git repo, or git is not installed.'
+  warn 'Error: Git is not installed.'
+  exit 1
+end
+system 'git rev-parse --show-toplevel', %i[out err] => File::NULL
+unless $CHILD_STATUS.success?
+  warn 'Error: You are outside git repo.'
   exit 1
 end
 remote_urls = `git remote get-url origin`.split("\n").grep(/github\.com/)
