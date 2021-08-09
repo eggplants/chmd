@@ -46,7 +46,7 @@ $ chmd > CHANGELOG.md
 
 ```txt
 $ chmd
-Error: You are outside git repo.
+Error: You are not in a git repo.
 ```
 
 ## License

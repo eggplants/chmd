@@ -101,7 +101,7 @@ module Chmd
         system 'git rev-parse --show-toplevel', %i[out err] => File::NULL
         return if $CHILD_STATUS.success?
 
-        warn 'Error: You are outside git repo.'
+        warn 'Error: You are not in a git repo.'
         exit 1
       end
     end
