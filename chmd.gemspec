@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.version       = Chmd::VERSION
   spec.authors       = ['eggplants']
   spec.email         = ['w10776e8w@yahoo.co.jp']
-  spec.summary       = 'Make CHANGELOG.md from git log and tags.'
-  spec.description   = 'Make CHANGELOG.md from git log and tags of repositorywhich origin exists on github.'
+  spec.summary       = 'CHANGELOG.md generator specializing in GitHub repo.'
+  spec.description   = 'Make CHANGELOG.md from git log and tags of repository which origin exists on GitHub.'
   spec.homepage      = 'https://github.com/eggplants/chmd'
   spec.license       = 'MIT'
 

@@ -2,7 +2,7 @@
 
 [![Gem](https://img.shields.io/gem/v/chmd?color=%23dc3519)](https://rubygems.org/gems/chmd)
 
-- Make CHANGELOG.md from git log and tags of repositorywhich origin exists on github.
+- CHANGELOG.md generator specializing in github repo
 
 ## Syntax
 
