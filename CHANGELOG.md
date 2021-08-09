@@ -1,6 +1,15 @@
 # Changelog
 
-## [v1.0](https://github.com/eggplants/chmd/releases/tag/v1.0) - 2021-08-10 02:39:47 ([compare](https://github.com/eggplants/chmd/compare/v0.2...v1.0))
+## [v1.1](https://github.com/eggplants/chmd/releases/tag/v1.1) - 2021-08-10 03:07:39 ([compare](https://github.com/eggplants/chmd/compare/v1.0...v1.1))
+
+- [d06d998842e14631a7b8287308013ff23728b47b](https://github.com/eggplants/chmd/commit/d06d998842e14631a7b8287308013ff23728b47b)
+  - fix: error message
+- [99c52614e4d822859660168559a12c63b2c94430](https://github.com/eggplants/chmd/commit/99c52614e4d822859660168559a12c63b2c94430)
+  - add: badge
+- [9176795d475b1f0f06e82dadec42c8484a3deafb](https://github.com/eggplants/chmd/commit/9176795d475b1f0f06e82dadec42c8484a3deafb)
+  - fix: README
+
+## [v1.0](https://github.com/eggplants/chmd/releases/tag/v1.0) - 2021-08-10 02:41:04 ([compare](https://github.com/eggplants/chmd/compare/v0.2...v1.0))
 
 - [47908579895ebbed0202f57083de72703ed9b82a](https://github.com/eggplants/chmd/commit/47908579895ebbed0202f57083de72703ed9b82a)
   - fix: ci syntax

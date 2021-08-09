@@ -1,6 +1,6 @@
 # `chmd`
 
-![Gem](https://img.shields.io/gem/v/chmd)
+[![Gem](https://img.shields.io/gem/v/chmd?color=%23dc3519)](https://rubygems.org/gems/chmd)
 
 - Make CHANGELOG.md from git log and tags of repositorywhich origin exists on github.
 
@@ -35,10 +35,13 @@ gem install chmd
 
 ```txt
 $ chmd
-# Changelog
+```
 
-...(output)...
+![scs01](img/scs01.png)
 
+- And output to CHANGELOG.md
+
+```txt
 $ chmd > CHANGELOG.md
 ```
 

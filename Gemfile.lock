@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    chmd (0.1.0)
+    chmd (1.1)
 
 GEM
   remote: https://rubygems.org/
