@@ -1,10 +1,5 @@
 # Changelog
 
-## [v2.1](https://github.com/eggplants/chmd/releases/tag/v2.1) - 2021-08-09 19:44:51 ([compare](https://github.com/eggplants/chmd/compare/v2.0...v2.1))
-
-- [523c07fad147e744982080c3c903ab85141a96d5](https://github.com/eggplants/chmd/commit/523c07fad147e744982080c3c903ab85141a96d5)
-  - fix: relpath to abspath
-
 ## [v2.0](https://github.com/eggplants/chmd/releases/tag/v2.0) - 2021-08-09 18:54:09 ([compare](https://github.com/eggplants/chmd/compare/v1.0...v2.0))
 
 - [02cd225b84d1fc85049876a2e17acc6950d8162f](https://github.com/eggplants/chmd/commit/02cd225b84d1fc85049876a2e17acc6950d8162f)
