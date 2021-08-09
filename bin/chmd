@@ -2,6 +2,7 @@
 # frozen_string_literal: true
 
 require 'chmd'
+require 'chmd/version'
 require 'optparse'
 
 OptionParser.new do |opt|
@@ -9,6 +10,10 @@ OptionParser.new do |opt|
   opt.separator 'options are:'
   opt.on('-h', '--help', 'Show this message') do
     puts opt
+    exit
+  end
+  opt.on('-v', '--version', 'Show version') do
+    puts Chmd::VERSION
     exit
   end
   opt.parse!(ARGV)
