@@ -39,7 +39,7 @@ gem install chmd
 chmd
 ```
 
-![scs01](img/scs01.png)
+![scs01](https://i.imgur.com/sh8h8pe.png)
 
 - And output to CHANGELOG.md
 
